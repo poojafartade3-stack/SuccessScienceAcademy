@@ -1,0 +1,5 @@
+# Ignore Python environment leftovers (old venv remnants)
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
