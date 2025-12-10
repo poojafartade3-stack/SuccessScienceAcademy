@@ -4,6 +4,7 @@ import AppRoutes from "./routes/AppRoutes";
 import { AuthProvider } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./routes/ScrollToTop";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function LayoutWrapper() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <AuthProvider>
         <LayoutWrapper />
       </AuthProvider>
